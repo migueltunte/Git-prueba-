@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form>
+        <fieldset>
+    <legend><b>Datos Personales</b>
+    </legend>
+        <p><label for="nombre"> Nombre:<input type="text" id="nombre" autofocus required></label></p>
+         <p><label for="correo"> correo:<input type="email" id="correo"></label></p>
+         <p><label for="url"> url:<input type="url"  id="url" placeholder="Escribe la URL de tu página web personal"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend><b>Fechas</b></legend>
+         <p><label for="fecha"> Fecha:<input type="date" id="fecha"></label></p>
+         <p><label for="tiempo">tiempo:<input type="time" id="tiempo"></label></p>
+        <p> <label for="fechayhora"> fecha y hora:<input type="datetime-local" id="fechayhora"></label></p>
+        <p><label for="mes">mes:<input type="month" id="mes"></label></p>
+        <p><label for="semana"> semana:<input type="week" id="semana"> </label></p>
+    </fieldset>
+    <fieldset>
+        <legend><b>Numeros y color</b></legend>
+        <p><label for="numero">numero: (de-10 a 10)</label> <input type="range" id="numero" min="-10" max="10" step="1" value="0" >
+        <output id="outnumero" name="numero" for="numero">0</output></p>
+        <p> <label for="telefono" >telefono:<input type="tel" id="telefono" > </label></p>
+        <p><label for="search">search:<input type="search" id="search" disabled></label></p>
+        <p><label for="colorfavorito">color favorito: <input type="color" id="colorfavorito"></label></p>
+    </fieldset>
+        <button type="submit"> Enviar</button>
+   
+    </form>
+</body>
+</html>
